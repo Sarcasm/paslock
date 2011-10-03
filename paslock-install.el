@@ -1,12 +1,13 @@
 ;; Based on https://raw.github.com/Sarcasm/paslock/master/paslock-install.el
 
-(let ((paslock-root
-       (file-name-as-directory
-	(or (bound-and-true-p paslock-dir)
-	    (concat (file-name-as-directory user-emacs-directory) "paslock")))))
+(let* ((paslock-root
+        (file-name-as-directory
+         (or (bound-and-true-p paslock-dir)
+             (concat (file-name-as-directory user-emacs-directory)))))
+       (paslock-directory (expand-file-name (concat paslock-root "/paslock"))))
 
-  (when (file-directory-p paslock-root)
-    (add-to-list 'load-path paslock-root))
+  (when (file-directory-p paslock-directory)
+    (add-to-list 'load-path paslock-directory))
 
   ;; try to require paslock, failure means we have to install it
   (unless (require 'paslock nil t)
@@ -37,7 +38,7 @@
 (require 'paslock)
 ;; end of generated code.
 "
-                      paslock-root) nil (or user-init-file "~/.emacs"))
+                      paslock-directory) nil (or user-init-file "~/.emacs"))
 
       (with-current-buffer buf
 	(goto-char (point-max))
