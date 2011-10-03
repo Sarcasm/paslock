@@ -19,7 +19,7 @@ In the *scratch* buffer:
 
 Features
 --------
-- A rick-roll module
-- Some abbrevs (when the user type "main" he get "mian")
-- Few cursor motion modified (i.e.: <left> sometime move to more than
+- Some abbrevs (when the user type "main" he gets "mian")
+- Few cursor moves modified (i.e.: <left> sometime move to more than
   one character)
+- Rick rolling
