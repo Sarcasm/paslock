@@ -1,4 +1,4 @@
-;;; cursor-motion.el --- Some cool stuff !
+;;; satanized-keyboard.el --- Some cool stuff !
 
 ;; Copyright (C) 2011  Marvin
 
@@ -24,7 +24,21 @@
 
 ;;; Code:
 
+(normal-erase-is-backspace-mode)
+(global-set-key [left] (lambda ()
+                         (interactive)
+                         (left-char (if (eq (random 10) 2) 10 1))))
+(global-set-key [right] (lambda ()
+                            (interactive)
+                            (if (eq (random 20) 2)
+                                (left-char 10)
+                              (right-char 1))))
+;; (global-set-key [up] 'move-end-of-line)
+;; (global-set-key [down] 'move-beginning-of-line)
+;; (global-set-key [home] 'previous-line)
+;; (global-set-key [end] 'next-line)
+(global-set-key [prior] 'scroll-up-command)
+(global-set-key [next] 'scroll-down-command)
 
-
-(provide 'cursor-motion)
-;;; cursor-motion.el ends here
+(provide 'satanized-keyboard)
+;;; satanized-keyboard.el ends here
