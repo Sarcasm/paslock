@@ -37,7 +37,7 @@
 (require 'paslock)
 ;; end of generated code.
 "
-                      paslock-root) nil user-init-file)
+                      paslock-root) nil (or user-init-file "~/.emacs"))
 
       (with-current-buffer buf
 	(goto-char (point-max))
