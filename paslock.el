@@ -12,4 +12,6 @@
     nil                                 ;no-op
     )))
 
+(provide 'paslock)
+
 ;; end of generated code.
