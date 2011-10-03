@@ -33,6 +33,7 @@
                 ("toto" "tata")
                 ("i" "j")
                 ("titi" "tixti")
+		("for" "forbidden /* mouhahaha !*/")
                 ("strlen" "strlen" (lambda ()
                                      (if (string= (symbol-at-point) "my_strlen")
                                          (backward-char 9)
@@ -42,7 +43,7 @@
                                          (save-excursion
                                            (insert "/* printf() c'est plus mieux */")))))
                 ("0" "'0'")
-                ("return" "return/* c'est bientôt la fini ! */" (lambda ()
+                ("return" "return/* c'est bientôt la fin ! */" (lambda ()
                                                                (backward-char 26)))
                 ("malloc" "malloc/* libère la mémoire ! */" (lambda ()
                                                                (backward-char 22)))))))
