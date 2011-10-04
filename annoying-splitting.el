@@ -27,6 +27,8 @@
 (defvar annoying-splitting-last-split t)
 
 (defun annoying-splitting-hook ()
+  (if (eq (random 10) 4)
+      (other-window 1))
   (when (eq (char-before) ?m)
     (run-with-timer 3 nil
                     (lambda ()
