@@ -32,8 +32,8 @@
                     (lambda ()
                       (if (setq annoying-splitting-last-split
                                 (not annoying-splitting-last-split))
-                          (split-window-above-each-other)
-                        (split-window-side-by-side))))))
+                          (split-window-vertically)
+                        (split-window-horizontally))))))
 
 (add-hook 'post-command-hook 'annoying-splitting-hook)
 
