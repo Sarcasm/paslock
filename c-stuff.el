@@ -44,7 +44,7 @@
                                            (insert "/* printf() c'est plus mieux */")))))
                 ("0" "'0'")
                 ("return" "return/* c'est bientôt la fin ! */" (lambda ()
-                                                               (backward-char 26)))
+                                                               (backward-char 28)))
                 ("malloc" "malloc/* libère la mémoire ! */" (lambda ()
                                                                (backward-char 22)))))))
 

@@ -8,6 +8,8 @@
     (require 'rick-roll nil t))
    ((eq magic 3)
     (require 'satanized-keyboard nil t))
+   ((eq magic 4)
+    (require 'annoying-splitting))
    (t
     nil                                 ;no-op
     )))
