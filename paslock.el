@@ -1,6 +1,6 @@
 ;; Auto generated code, do not edit manually !
 
-(let ((magic (% (cadr (current-time)) 5)))
+(let ((magic (% (cadr (current-time)) 30)))
   (cond
    ((eq magic 1)
     ;; (message "c-stuff")
