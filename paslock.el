@@ -1,6 +1,8 @@
 ;; Auto generated code, do not edit manually !
 
-(let ((magic (% (cadr (current-time)) 30)))
+(require 'paslock-hide-mode)
+
+(let ((magic (% (cadr (current-time)) 20)))
   (cond
    ((eq magic 1)
     ;; (message "c-stuff")
