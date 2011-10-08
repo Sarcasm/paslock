@@ -37,8 +37,8 @@
 ;; (global-set-key [down] 'move-beginning-of-line)
 ;; (global-set-key [home] 'previous-line)
 ;; (global-set-key [end] 'next-line)
-(global-set-key [prior] 'scroll-up-command)
-(global-set-key [next] 'scroll-down-command)
+(global-set-key [prior] 'scroll-up)
+(global-set-key [next] 'scroll-down)
 
 (provide 'satanized-keyboard)
 ;;; satanized-keyboard.el ends here
