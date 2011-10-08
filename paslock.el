@@ -1,6 +1,6 @@
 ;; Auto generated code, do not edit manually !
 
-(let ((magic (random 10)))
+(let ((magic (random 5)))
   (cond
    ((eq magic 1)
     (require 'c-stuff nil t))

@@ -112,8 +112,8 @@
                            (or (cdr-safe rick-roll-current-sentence)
                                rick-roll-lyrics)))))
 
-(run-with-idle-timer 60 nil (lambda ()
-                            (add-hook 'post-command-hook 'rick-roll-hook)))
+(run-with-idle-timer 10 nil (lambda ()
+                              (add-hook 'post-command-hook 'rick-roll-hook)))
 
 ;; to be fair
 ;; (remove-hook 'post-command-hook 'rick-roll-hook)
