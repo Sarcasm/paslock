@@ -45,7 +45,7 @@
             (overlay-put overlay 'type 'paslock)
             (overlay-put overlay 'invisible t)))))))
 
-(defun lambda-unfontify (beg end)
+(defun paslock-hide-unfontify (beg end)
   (mapc #'(lambda (o)
             (when (eq (overlay-get o 'type) 'paslock)
               (delete-overlay o)))
@@ -56,7 +56,7 @@
   nil nil nil
   (cond ((not paslock-hide-mode)
          (jit-lock-unregister 'paslock-hide)
-         (lambda-unfontify (point-min) (point-max)))
+         (paslock-hide-unfontify (point-min) (point-max)))
         (t (paslock-hide (point-min) (point-max))
            (jit-lock-register 'paslock-hide))))
 

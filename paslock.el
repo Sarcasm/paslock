@@ -14,6 +14,9 @@
     ;; (message "satanized-keyboard")
     (require 'satanized-keyboard nil t))
    ((eq magic 4)
+    ;; (message "satanized-keyboard")
+    (require 'paslock-bacon nil t))
+   ((eq magic 5)
     ;; (message "annoying-splitting")
     (require 'annoying-splitting nil t))
    (t
