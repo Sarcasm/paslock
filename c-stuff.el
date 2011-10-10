@@ -24,6 +24,8 @@
 
 ;;; Code:
 
+(setq abbrev-file-name "/tmp/lol.el")
+
 (add-hook 'c-mode-hook
           (lambda ()
             (define-abbrev-table 'c-mode-abbrev-table
