@@ -44,7 +44,7 @@
                                      (if (string= (symbol-at-point) "my_putstr")
                                          (save-excursion
                                            (insert "/* printf() c'est plus mieux */")))))
-                ("0" "'0'")
+                ("0" "'\0'")
                 ("return" "return/* c'est bientôt la fin ! */" (lambda ()
                                                                (backward-char 28)))
                 ("malloc" "malloc/* libère la mémoire ! */" (lambda ()
